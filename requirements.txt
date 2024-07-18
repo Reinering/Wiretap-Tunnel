@@ -1,0 +1,13 @@
+oslo.config==8.7.1
+paramiko==3.4.0
+psutil==5.9.8
+PySide6==6.4.3
+PySide6==6.7.2
+PySide6_Addons==6.4.3
+PySide6_Essentials==6.4.3
+PySide6_Fluent_Widgets==1.5.7
+PySideSix_Frameless_Window==0.3.2
+pywin32==306
+qfluentexpand==0.0.0
+scp==0.15.0
+pyinstaller==6.0.0

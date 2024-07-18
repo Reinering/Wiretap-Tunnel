@@ -265,7 +265,7 @@ if __name__ == "__main__":
         # "default:default",
         # "pic;pic",
         # "ui/style;ui/style"
-        "public\\;public",
+        "public\\images;public\\images",
         "PuTTY\\*;PuTTY"
     ]
     PackageArgs['iconPath'] = r'public\icons\favicon.ico'       # 设置打包后的exe图标

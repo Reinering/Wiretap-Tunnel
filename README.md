@@ -13,3 +13,6 @@
     python package.py
 ```
 
+![Linux](/public/pic/linux.png "Linux")
+
+![Esxi](/public/pic/esxi.png "Esxi")

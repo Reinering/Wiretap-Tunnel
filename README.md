@@ -10,7 +10,7 @@
 ### pack
 ```
     pip install -r requirements.txt
-    python package.py
+    python scripts/pack.py
 ```
 
 ![Linux](/public/pic/linux.png "Linux")

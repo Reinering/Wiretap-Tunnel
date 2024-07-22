@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-author: Reiner New
+author: Reiner
 email: nbxlc@hotmail.com
 """
 
@@ -19,7 +19,7 @@ from PySide6.QtWidgets import QSplashScreen
 from PySide6.QtGui import QPixmap
 from PySide6.QtWidgets import QApplication
 
-from manage import UI_CONFIG, LOGLEVEL, LOGFILE, ROOT_PATH, SettingPath, SettingFile, SETTINGS, RUNTIMEENV
+from manage import UI_CONFIG, LOGLEVEL, LOGFILE, ROOT_PATH, SettingPath, SettingFile, SETTINGS, RUNTIMEENV, BUNDLE_DIR
 from common.config import Config
 from ui.MainWindow import MainWindow
 
@@ -126,9 +126,9 @@ def main(argv=None):
             # app.installTranslator(translator)
 
             # 启动图标
-            existPic = os.path.exists(UI_CONFIG["startLogo"])
+            existPic = os.path.exists(os.path.join(BUNDLE_DIR, UI_CONFIG["startLogo"]))
             if existPic:
-                splash = QSplashScreen(QPixmap(UI_CONFIG["startLogo"]))
+                splash = QSplashScreen(QPixmap(os.path.join(BUNDLE_DIR, UI_CONFIG["startLogo"])))
                 splash.show()
                 time.sleep(2)       # 启动图标显示2s
 
